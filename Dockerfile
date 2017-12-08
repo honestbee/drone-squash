@@ -5,4 +5,4 @@ RUN pip3 install docker-squash
 
 ADD squa.sh /usr/bin
 
-ENTRYPOINT ["/usr/bin/squash"]
+ENTRYPOINT ["/usr/bin/squa.sh"]
