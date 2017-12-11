@@ -19,5 +19,5 @@ test: build
 		-e PLUGIN_SOURCE_TAG=$(PLUGIN_SOURCE_TAG) \
 		-e PLUGIN_TARGET_IMAGE=$(PLUGIN_TARGET_IMAGE) \
 		-e PLUGIN_TARGET_TAG=$(PLUGIN_TARGET_TAG) \
-		-v /var/run/docker.sock:/var/run/docker.sock \
+		--privileged \
 		$(IMAGE):$(TAG)
